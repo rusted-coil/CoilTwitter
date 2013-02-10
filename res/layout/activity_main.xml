@@ -1,0 +1,75 @@
+<TabHost
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#fafad2">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<!-- タブの内容 -->
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_weight="1"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+				<ListView
+				    android:id="@+id/timeline"
+						android:layout_width="fill_parent" android:layout_height="fill_parent"
+						android:background="#00FFFFFF"
+						android:layout_gravity="" />
+        <LinearLayout android:id="@+id/reply" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout 
+            android:id="@+id/post" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+		        <Button
+		            android:id="@+id/postbutton1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_alignParentLeft="true"
+		            android:onClick="post1"
+		            android:text="post" />
+		        <Button
+		            android:id="@+id/postbutton2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_alignParentRight="true"
+		            android:onClick="post2"
+		            android:text="add image" />
+		        <TextView
+		            android:id="@+id/postimage"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/postbutton1"
+		            android:text=""
+		            />
+		        <EditText
+		            android:id="@+id/posttext"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_below="@id/postimage"
+		            android:gravity="top"
+		            android:layout_alignParentBottom="true" />
+		    </RelativeLayout>
+    </FrameLayout>
+
+		<!-- セパレータ -->
+		<FrameLayout
+			android:background="#222222"
+			android:layout_width="fill_parent"
+			android:layout_height="1dp" />
+
+		<!-- タブ -->
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+</TabHost>

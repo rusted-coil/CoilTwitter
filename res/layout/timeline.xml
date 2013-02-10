@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width ="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation  ="horizontal" 
+    android:background="#00FFFFFF">
+    <LinearLayout 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:background="#00FFFFFF">
+        <ImageView 
+            android:layout_width ="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:minHeight="48dp" 
+            android:maxWidth ="48dp" 
+            android:maxHeight="48dp" 
+            android:minWidth ="48dp"
+            android:tag      ="icon"/>
+        <LinearLayout 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:orientation="vertical" 
+            android:background="#00FFFFFF">
+            <TextView 
+                android:layout_width  ="wrap_content" 
+                android:layout_height ="wrap_content" 
+                android:textSize      ="16dp" 
+                android:textStyle="bold"
+                android:textColor     ="#000000" 
+                android:layout_gravity="center_vertical"
+                android:tag           ="userID"/>
+            <TextView 
+                android:layout_width  ="wrap_content" 
+                android:layout_height ="wrap_content" 
+                android:textSize      ="16dp" 
+                android:textColor     ="#000000" 
+                android:layout_gravity="center_vertical"
+                android:tag           ="content"/>
+            <TextView 
+                android:layout_width  ="wrap_content" 
+                android:layout_height ="wrap_content" 
+                android:textSize      ="10dp" 
+                android:textColor     ="#000000" 
+                android:layout_gravity="center_vertical"
+                android:tag           ="date"/>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
