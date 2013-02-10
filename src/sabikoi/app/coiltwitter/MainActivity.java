@@ -63,6 +63,7 @@ public class MainActivity extends TabActivity  implements OnClickListener,OnItem
     SharedPreferences.Editor editor;
     
     TextView tv;
+    int a;
     
     String postImagePath = "";
     
